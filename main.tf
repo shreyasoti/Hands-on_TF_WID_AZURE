@@ -1,6 +1,6 @@
 terraform {
   required_version = "1.15.3"
-  required_providers {
+az   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = ">=3.43.0"
