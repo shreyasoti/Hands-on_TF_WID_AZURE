@@ -23,7 +23,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "813-1ed7d541-hands-on-with-terraform-on-azure"
-  location = "westus"
+  location = "West US"
 }
 
 module "securestorage" {
@@ -31,5 +31,5 @@ module "securestorage" {
   version              = "1.0.0"
   resource_group_name  = "azurerm_resource_group.rg.name"
   location             = "azurerm_resource_group.rg.location"
-  storage_account_name = "my-1st-st2rage-account-with-TF_GA"
+  storage_account_name = "my1stt2rageaccwithtfga"
 }
