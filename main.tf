@@ -28,7 +28,7 @@ resource "azurerm_resource_group" "rg" {
 
 module "securestorage" {
   source               = "app.terraform.io/ContosoMarketing/securestorage/azurerm"
-  version              = "1.0.0"
+  version              = "1.0.1"
   resource_group_name  = "azurerm_resource_group.rg.name"
   location             = "azurerm_resource_group.rg.location"
   storage_account_name = "my-1st-st2rage-account-with-TF_GA"
